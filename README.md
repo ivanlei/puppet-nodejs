@@ -1,4 +1,10 @@
-puppet-nodejs
-=============
+puppet-node
+================
 
-Puppet module for building &amp; installing nodejs from source
+Puppet module for installing NodeJS
+
+Example
+-------
+```ruby
+class { 'node': }
+```

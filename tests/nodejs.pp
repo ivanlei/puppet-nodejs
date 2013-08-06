@@ -1,0 +1,3 @@
+require stdlib
+
+class { 'nodejs': }
