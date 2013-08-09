@@ -8,7 +8,7 @@
 #  - Installs Node
 #
 # === Example
-# class { 'node': }
+# class { 'nodejs': }
 #
 class nodejs {
   require git

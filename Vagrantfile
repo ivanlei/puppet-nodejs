@@ -7,7 +7,7 @@ Vagrant.configure('2') do |global_config|
   global_config.vm.box_url = 'https://s3-us-west-1.amazonaws.com/vagaries/ubuntu-server-10044-x64-fusion503.box'
 
   vms = {
-    :nodejs => {
+    'nodejs-nodejs' => {
       :ip => '10.80.80.8'
     }
   }
@@ -79,7 +79,7 @@ Vagrant.configure('2') do |global_config|
       # Puppet  #
       ###########
       config.vm.provision :puppet do |puppet|
-        puppet.module_path    = '..'
+        puppet.module_path    = './modules'
         puppet.manifests_path = './tests'
         puppet.manifest_file  = "#{vm_name}.pp"
         if debug
